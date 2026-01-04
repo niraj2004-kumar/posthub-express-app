@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostHub</title>
+    <link rel="stylesheet" href="/style.css">
+   
+</head>
+<body>
+    <h1 style="color:#B92B27 ">PostHub</h1>
+    <%for (post of posts){%>
+    <div class="card">
+        <h3 id="user">@<%=post.username%></h3>
+        <h4><%=post.content%></h4>
+        <a href="http://localhost:8080/posts/<%=post.id%>">
+            <button id="show">Show post</button>
+        </a>
+        <a href="http://localhost:8080/posts/<%=post.id%>/edit">
+            <button >Edit post</button>
+        </a>
+        <a href="http://localhost:8080/posts/<%=post.id%>/delete">
+            <button>Delete</button>
+        </a>
+    </div>
+<%}%>
+<a  href="http://localhost:8080/posts/new">
+    <button>Create post</button>
+</a>
+</body>
+</html>
+

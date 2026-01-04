@@ -1,0 +1,45 @@
+/* Page base */
+body {
+    background-color: #f5f6f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Post card */
+.post-container {
+    background: #ffffff;
+    max-width: 700px;
+    width: 100%;
+    padding: 32px 36px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Post ID */
+.post-id {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 14px;
+}
+
+/* Username */
+.username {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 18px;
+}
+
+/* Content */
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #374151;
+    white-space: pre-line;
+}
